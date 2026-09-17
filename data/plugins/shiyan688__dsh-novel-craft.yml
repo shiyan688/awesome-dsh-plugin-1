@@ -2,5 +2,5 @@ url: https://github.com/shiyan688/dsh-novel-craft
 name: shiyan688/dsh-novel-craft
 category: workflow
 description:
-  en: 'Taste-calibration workbench for fiction writing: mark passages in draft variants with thumbs up/down while reading, and one auxiliary model call distills those marks into reusable writing rules. Raw quotes stay in a separate evidence file, so only the rules ever enter a model context.'
-  zh: 面向小说创作的品味校准工作台：读候选稿时只点好/坏，再由一次辅助模型调用把标注提炼成可复用的写作规律。原文留在单独的证据文件里，进模型上下文的只有规律。
+  en: 'Novel-writing workbench that learns the author''s taste: mark passages in draft variants with thumbs up/down while reading, and those marks are distilled into reusable writing rules — only the rules reach the writing context (three explicit, capped, author-initiated exceptions, documented in the README). On top of that loop: a new-chapter workflow (scene-decision directions, candidate drafts, passage picking, merged final draft), note-driven revision that rewrites only the annotated paragraphs and verifies the rest character by character before writing back, a one-file writing pack with a context budget, and local plot/ledger checks that never feed the manuscript to a model. 775 test assertions; verified against dsh 0.1.5-rc.1 and 0.1.5-rc.2.'
+  zh: 小说创作工作台：读候选稿时只点好/坏，标注被提炼成可复用的写作规律——只有规律进写稿上下文（三个作者亲手点下的按钮级例外与各自上限，README 里写清楚了）。在此之上还有：开新章（场景决策方向 → 候选稿 → 选段 → 合并定稿）、批注式微调（只改被批注的段落，其余逐字核对后才允许写回）、带上下文预算表的单文件写作包、以及不把正文喂给模型的情节与账目体检。775 条断言；dsh 0.1.5-rc.1 / 0.1.5-rc.2 实测通过。
